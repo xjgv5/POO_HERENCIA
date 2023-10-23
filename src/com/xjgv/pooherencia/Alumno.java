@@ -6,6 +6,30 @@ public class Alumno extends Persona{
     private double notaLenguaje;
     private double notaCiencias;
 
+    public Alumno(){
+        System.out.println("Inicializando alumno");
+    }
+
+    public Alumno(String nombre, String apellido) {
+        super(nombre, apellido);
+    }
+
+    public Alumno(String nombre, String apellido, int edad) {
+        super(nombre, apellido, edad);
+    }
+
+    public Alumno(String nombre, String apellido, int edad, String institucion) {
+        super(nombre, apellido, edad);
+        this.institucion = institucion;
+    }
+
+    public Alumno(String nombre, String apellido, int edad, String institucion, double notaMatematicas, double notaLenguaje, double notaCiencias) {
+        this(nombre, apellido, edad, institucion);
+        this.notaMatematicas = notaMatematicas;
+        this.notaLenguaje = notaLenguaje;
+        this.notaCiencias = notaCiencias;
+    }
+
     public String getInstitucion() {
         return institucion;
     }

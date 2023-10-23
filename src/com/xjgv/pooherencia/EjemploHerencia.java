@@ -2,6 +2,8 @@ package com.xjgv.pooherencia;
 
 public class EjemploHerencia {
     public static void main(String[] args) {
+        System.out.println("************ creando la instancia de alumno ***************");
+
         Alumno alumno = new Alumno();
         alumno.setNombre("Andres");
         alumno.setApellido("Guzman");
@@ -10,6 +12,7 @@ public class EjemploHerencia {
         alumno.setNotaLenguaje(8);
         alumno.setNotaCiencias(8);
 
+        System.out.println("*********** Creando la instancia alumno internacional****************");
         AlumnoInternacional alumnoInt = new AlumnoInternacional();
         alumnoInt.setNombre("Peter");
         alumnoInt.setApellido("Doe");
@@ -21,6 +24,7 @@ public class EjemploHerencia {
         alumnoInt.setNotaLenguaje(7);
         alumnoInt.setNotaCiencias(10);
 
+        System.out.println("***************** Creando la instancia de profesor*************");
         Profesor profesor = new Profesor();
         profesor.setNombre("Luci");
         profesor.setApellido("Pérez");
