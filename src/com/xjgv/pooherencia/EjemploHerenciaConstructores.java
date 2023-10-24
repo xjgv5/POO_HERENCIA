@@ -40,11 +40,17 @@ public class EjemploHerenciaConstructores {
             System.out.println("Nota matematicas : " + ((Alumno) persona).getNotaMatematicas());
             System.out.println("Nota lenguaje: " + ((Alumno) persona).getNotaLenguaje());
             System.out.println("Nota ciencias : " + ((Alumno) persona).getNotaCiencias());
+            System.out.println("************ Sobre escritura saludar *****************");
+            System.out.println(persona.saludar());
+            System.out.println("******************************************************");
             if (persona instanceof AlumnoInternacional){
                 System.out.println("***** Imprimiendo los datos del tipo alumno internacional *****");
 
                 System.out.println("Nota idiomas : " + ((AlumnoInternacional) persona).getNotaIdiomas());
                 System.out.println("Pais : " + ((AlumnoInternacional) persona).getPais());
+                System.out.println("************ Sobre escritura saludar *****************");
+                System.out.println(persona.saludar());
+                System.out.println("******************************************************");
 
             }
         }
@@ -53,6 +59,10 @@ public class EjemploHerenciaConstructores {
             System.out.println("***** Imprimiendo los datos del tipo profesor *****");
 
             System.out.println("Asignatura : " + ((Profesor) persona).getAsignatura());
+
+            System.out.println("************ Sobre escritura saludar *****************");
+            System.out.println(persona.saludar());
+            System.out.println("******************************************************");
         }
         System.out.println();
     }
