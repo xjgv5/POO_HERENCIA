@@ -1,7 +1,5 @@
 package com.xjgv.pooherencia;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class AlumnoInternacional extends Alumno{
     private String pais;
     private double notaIdiomas;
