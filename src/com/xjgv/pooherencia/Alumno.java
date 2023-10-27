@@ -64,6 +64,11 @@ public class Alumno extends Persona{
 
     @Override
     public String saludar(){
-        return "Hola que tal soy un alumno y mi nombre es: " + getNombre();
+        String saludar = super.saludar();
+        return saludar + " soy un alumno y mi nombre es: " + getNombre();
+    }
+
+    public double calcularPromedio(){
+        return (notaCiencias + notaLenguaje + notaMatematicas) / 3;
     }
 }

@@ -50,6 +50,7 @@ public class EjemploHerenciaConstructores {
                 System.out.println("Pais : " + ((AlumnoInternacional) persona).getPais());
                 System.out.println("************ Sobre escritura saludar *****************");
                 System.out.println(persona.saludar());
+                System.out.println("Promedio : " + ((AlumnoInternacional) persona).calcularPromedio());
                 System.out.println("******************************************************");
 
             }
