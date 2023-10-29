@@ -71,4 +71,14 @@ public class Alumno extends Persona{
     public double calcularPromedio(){
         return (notaCiencias + notaLenguaje + notaMatematicas) / 3;
     }
+
+    @Override
+    public String toString() {
+        return  super.toString() +
+                "\ninstitucion='" + institucion + '\'' +
+                ", notaMatematicas=" + notaMatematicas +
+                ", notaLenguaje=" + notaLenguaje +
+                ", notaCiencias=" + notaCiencias +
+                ", promedio=" + this.calcularPromedio();
+    }
 }
